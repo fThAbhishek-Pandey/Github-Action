@@ -1,10 +1,9 @@
 name: fth workflow
-on: push 
+on: push
 jobs: 
- build: 
-  run-ons: ubuntu-latest
-   steps: 
-    - uses: actions/checkout@v3
-    - name: Run a sample github Action
-      run: echo "this workflow is run succesfully for this particular actions"
-     
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - name: Run a sample GitHub Action
+        run: echo "this workflow is run successfully for this particular action"
